@@ -41,6 +41,8 @@
         title = 'Todos';
         todoList: any [] = [];
       }
+
+      //COMPLETED
     ```
     <!-- todoList: any [] = []; -->
     
@@ -54,8 +56,8 @@
         
         ];
       }
-    ```
-
+    ``` 
+  //COMPLETED
 1. Once we've completed a todo we'll obviously need to remove it from our list. Create a function that will let us remove items from the todo list once it's called.
 
     ```typescript
@@ -100,6 +102,7 @@
     ```html
     <input type="text" class="todo-input" placeholder="Add next todo here">
     ```
+//completed 8:34pm 8/12/2020
 
 1. Now we can type in text on the screen but we'll need to capture the event and save the input! So let's import a module called: FormsModule to help us get the input and make it available to our component's class. In the `app.module.ts` file under the `import { NgModule } from '@angular/core'` line write: `import { FormsModule } from '@angular/forms'`.
 1. Then in the `@NgModule.imports` array add in `FormsModule` under `AppRoutingModule,` *Be sure to add the `,` in.*
@@ -119,6 +122,7 @@
         todoTitle: string;
       }
     ```
+completed 8/16/2020
 
 1. Then set it as an empty string when the component is loaded. Add in this line: `this.todoTitle = '';`
 
